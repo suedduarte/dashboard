@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard Design</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="img/icon.png">
+                    <h2>Dash<span class="danger">board</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Usuários</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Histórico</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Análises</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Novo Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main>
+            <h1>Análises</h1>
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Vendas totais</h3>
+                            <h1>R$65,024</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Visitas ao site</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Pesquisas</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Novos Usuários Section -->
+            <div class="new-users">
+                <h2>Novos Usuários</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="img/perfil1.jpg">
+                        <h2>João</h2>
+                        <p>54 Min Atrás</p>
+                    </div>
+                    <div class="user">
+                        <img src="img/perfil3.jpg">
+                        <h2>Ana</h2>
+                        <p>3 Hours Atrás</p>
+                    </div>
+                    <div class="user">
+                        <img src="img/perfil2.jpg">
+                        <h2>Pedro</h2>
+                        <p>6 Hours Atrás</p>
+                    </div>
+                    <div class="user">
+                        <img src="img/plus.png">
+                        <h2>Mais</h2>
+                        <p>Novo Usuário</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedidos Recentes -->
+            <div class="recent-orders">
+                <h2>Pedidos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do curso</th>
+                            <th>Número do curso</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Mostrar Mais</a>
+            </div>
+        </main>
+
+        <!-- Layout da Direita -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Julia</b></p>
+                        <small class="text-muted">Administrador</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/perfil.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Perfil -->
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="img/perfil.jpg">
+                    <h2>Julia Shimitt</h2>
+                    <p>Desenvolvedora Web</p>
+                </div>
+            </div>
+
+            <!-- Lembretes -->
+            <div class="reminders">
+                <div class="header">
+                    <h2>Lembretes</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Live</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Adicionar tarefas</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- redes sociais -->
+    <div class="socialmedia">
+        <ul class="sci">
+            <div class="text-footer">
+                <p>Copyright &copy; 2023 by Sued Duarte</p>
+            </div>
+          <li><a href="https://www.linkedin.com/in/suedduarte"><img src="img/linkedin.png" alt="linkedinicon"></a></li>
+          <li><a href="https://github.com/suedduarte"><img src="img/github.png" alt="githubicon"></a></li>
+          <li><a href="mailto:suedduarte57@gmail.com"><img src="img/email.png" alt="emailicon"></a></li>
+        </ul>
+      </div>
+        </div>
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
